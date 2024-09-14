@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <dimen name="padding">16dp</dimen>
+    <dimen name="space_x1">4dp</dimen>
+    <dimen name="space_x10">40dp</dimen>
+
+    <!-- Book List Item -->
+    <dimen name="book_item_container_height">152dp</dimen>
+    <dimen name="book_image_height">120dp</dimen>
+    <dimen name="book_image_width">72dp</dimen>
+</resources>

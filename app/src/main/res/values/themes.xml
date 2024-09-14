@@ -1,9 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-	<!-- Base application theme. -->
-	<style name="Base.Theme.AndroidOTChallenge" parent="Theme.Material3.DayNight.NoActionBar">
-		<!-- Customize your light theme here. -->
-		<!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-	</style>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AndroidOTChallenge" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorTertiary">@color/tertiary</item>
+    </style>
 
-	<style name="Theme.AndroidOTChallenge" parent="Base.Theme.AndroidOTChallenge" />
+    <style name="Theme.AndroidOTChallenge" parent="Base.Theme.AndroidOTChallenge" />
+
+    <style name="Text.Title.Small" parent="TextAppearance.MaterialComponents.Headline5">
+
+    </style>
+
+    <style name="Text.Body.Normal" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:ellipsize">end</item>
+    </style>
+
 </resources>

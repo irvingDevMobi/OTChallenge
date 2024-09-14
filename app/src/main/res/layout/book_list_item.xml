@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/book_item_container_height"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding">
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="@dimen/book_image_width"
+        android:layout_height="@dimen/book_image_height"
+        android:contentDescription="@string/book_image_description"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding">
+
+        <TextView
+            android:id="@+id/book_title_text"
+            style="@style/Text.Title.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="100 Years of Solitude" />
+
+        <TextView
+            android:id="@+id/book_description_text"
+            style="@style/Text.Body.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+
+            tools:text="One Hundred Years of Solitude (Spanish: Cien años de soledad, Latin American Spanish) is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the fictitious town of Macondo" />
+    </LinearLayout>
+</LinearLayout>

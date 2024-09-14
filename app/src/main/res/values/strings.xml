@@ -1,3 +1,6 @@
 <resources>
-	<string name="app_name">Android OT Challenge</string>
+	<string name="app_name">Open Library</string>
+
+	<!-- Books List Screen -->
+	<string name="book_image_description">book cover</string>
 </resources>
