@@ -1,4 +1,4 @@
-package com.example.otchallenge.books.presenter
+package com.example.otchallenge.books.domain
 
 data class Book(
     val id: String = "",

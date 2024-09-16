@@ -3,4 +3,5 @@
 
 	<!-- Books List Screen -->
 	<string name="book_image_description">book cover</string>
+	<string name="general_error">There was an unexpected error with the app, try later.</string>
 </resources>

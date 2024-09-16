@@ -5,12 +5,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.example.otchallenge.R
-import com.example.otchallenge.books.presenter.Book
+import com.example.otchallenge.books.domain.Book
 import com.example.otchallenge.databinding.BookListItemBinding
 
 class BookListAdapter(
     private val glideManager: RequestManager,
-    private val books: List<Book>
+    private val books: MutableList<Book>
 ) : RecyclerView.Adapter<BookListAdapter.BookItemHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookItemHolder {
@@ -25,6 +25,13 @@ class BookListAdapter(
     }
 
     override fun getItemCount(): Int = books.size
+
+    fun setBooks(books: List<Book>) {
+        this.books.clear()
+        this.books.addAll(books)
+        // TODO: implement DiffUtil
+        notifyDataSetChanged()
+    }
 
     class BookItemHolder(
         private val binding: BookListItemBinding
