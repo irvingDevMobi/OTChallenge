@@ -1,6 +1,6 @@
-package com.example.otchallenge.di
+package com.example.otchallenge.di.app
 
-import com.example.otchallenge.MainActivity
+import com.example.otchallenge.app.MainActivity
 import com.example.otchallenge.di.books.BookListSubcomponent
 import dagger.Subcomponent
 

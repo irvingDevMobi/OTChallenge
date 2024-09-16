@@ -1,4 +1,4 @@
-package com.example.otchallenge.di
+package com.example.otchallenge.di.app
 
 import dagger.Module
 import dagger.Provides

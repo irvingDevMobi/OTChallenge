@@ -3,8 +3,8 @@ package com.example.otchallenge.di.books
 import com.example.otchallenge.books.BookListContract
 import com.example.otchallenge.books.domain.GetBooksAlphabetically
 import com.example.otchallenge.books.presenter.BookListPresenter
-import com.example.otchallenge.di.IoScheduler
-import com.example.otchallenge.di.UiScheduler
+import com.example.otchallenge.di.app.IoScheduler
+import com.example.otchallenge.di.app.UiScheduler
 import dagger.Module
 import dagger.Provides
 import io.reactivex.Scheduler

@@ -1,5 +1,6 @@
 package com.example.otchallenge.books.presenter
 
+import android.util.Log
 import com.example.otchallenge.base.presenter.BasePresenter
 import com.example.otchallenge.books.BookListContract
 import com.example.otchallenge.books.domain.GetBooksAlphabetically
@@ -18,6 +19,7 @@ class BookListPresenter(
                 .subscribeOn(ioScheduler)
                 .observeOn(uiScheduler)
                 .subscribe(view::showBooks) { error ->
+                    Log.e("BookListPresenter", error.message.toString(), error)
                     view.showError(error.message.toString())
                 }
         )

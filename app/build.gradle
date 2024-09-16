@@ -2,7 +2,11 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kapt)
+    alias(libs.plugins.serialization)
 }
+
+def apiKey = project.hasProperty('API_KEY') ? project.getProperty('API_KEY')
+        : "KoRB4K5LRHygfjCL2AH6iQ7NeUqDAGAB" // TODO: This shouldn't be here, only in local.properties file
 
 android {
     namespace 'com.example.otchallenge'
@@ -16,10 +20,14 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "BASE_URL", "\"https://api.nytimes.com/svc/books/v3/\""
+        buildConfigField "String", "API_KEY", "\"${apiKey}\""
     }
 
     buildFeatures {
         viewBinding true
+        buildConfig = true
     }
 
     buildTypes {
@@ -52,7 +60,9 @@ dependencies {
     kapt libs.dagger.compiler
 
     //retrofit
+    implementation libs.okhttp
     implementation libs.retrofit
+    implementation libs.retrofit.converter
     implementation libs.retrofit.rx.adapter
 
     //glide
@@ -62,6 +72,9 @@ dependencies {
     implementation libs.rx.android
     implementation libs.rx.java
     implementation libs.rx.kotlin
+
+    // Serialization
+    implementation libs.serialization.json
 
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit

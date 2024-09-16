@@ -1,6 +1,5 @@
-package com.example.otchallenge.di
+package com.example.otchallenge.di.app
 
-import com.example.otchallenge.di.books.BookDataModule
 import dagger.Component
 import javax.inject.Singleton
 

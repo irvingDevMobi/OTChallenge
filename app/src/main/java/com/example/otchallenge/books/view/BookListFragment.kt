@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.example.otchallenge.MyApplication
+import com.example.otchallenge.app.MyApplication
 import com.example.otchallenge.R
 import com.example.otchallenge.books.BookListContract
 import com.example.otchallenge.books.domain.Book

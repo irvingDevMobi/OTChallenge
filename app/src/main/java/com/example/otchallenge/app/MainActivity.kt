@@ -1,4 +1,4 @@
-package com.example.otchallenge
+package com.example.otchallenge.app
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import com.example.otchallenge.R
 import com.example.otchallenge.books.view.BookListFragment
 import com.example.otchallenge.databinding.ActivityMainBinding
 
